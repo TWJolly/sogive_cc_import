@@ -152,8 +152,8 @@ column_reformatting = {
     },
     "extract_financial": {
         "regno": "",
-        "fystart": "",
-        "fyend": "",
+        "fystart": "datetime",
+        "fyend": "datetime",
         "income": "float",
         "expend": "float"
     },

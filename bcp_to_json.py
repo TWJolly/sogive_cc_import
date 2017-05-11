@@ -106,11 +106,11 @@ def convert_all_data_to_json(root_dir_name=os.path.dirname(os.path.abspath(__fil
                              root_id="regno", main_table_name='extract_main_charity',
                              default_charity_count_limit=100):
     # Primary function of script - set extract_data to True to perform the data extract from the original zipped bcp files
-    os.chdir(os.path.join(root_dir_name))
+    # zip_file should be stored in the csv folder
+    os.chdir(os.path.join(root_dir_name, csv_folder))
     if extract_data:
         import_zip(zip_file)
 
-    os.chdir(os.path.join(root_dir_name, csv_folder))
     all_data_tables = read_all_csvs_to_pd(cc_files)
     if not id_list:
         full_id_list = [id for id in list(all_data_tables[main_table_name][root_id])]
@@ -127,6 +127,6 @@ def convert_all_data_to_json(root_dir_name=os.path.dirname(os.path.abspath(__fil
 
 if __name__ == "__main__":
     example_ouput_name = 'example.json'
-    example_json = convert_all_data_to_json()
+    example_json = convert_all_data_to_json(zip_file="RegPlusExtract_January_2017.zip", extract_data=True)
     with open(example_ouput_name, 'w') as feedsjson:
         json.dump(example_json, feedsjson, indent=4, ensure_ascii=True)
