@@ -184,8 +184,8 @@ column_reformatting = {
     "extract_partb": {
         "regno": "",
         "artype": "",
-        "fystart": "",
-        "fyend": "",
+        "fystart": "datetime",
+        "fyend": "datetime",
         "inc_leg": "float",
         "inc_end": "float",
         "inc_vol": "float",
