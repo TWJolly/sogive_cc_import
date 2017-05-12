@@ -20,4 +20,4 @@ After downloading the zipped charity commission data, place it in a directory wi
 
 convert_all_data_to_json is also called by the elasticsearch_import script which places the data into an ES database.
 
-There are a number of options for selecting which ids to use. Note - ccnverting all the data will probably take a very long time.
+There are a number of options for selecting which ids to use. Note - converting all the data will probably take a very long time.
