@@ -1,6 +1,8 @@
 # charity-commission-extract
 Cloned from https://github.com/ncvo/charity-commission-extract which contains:
-Python utilities for handling the import of data from the Charity Commission data extract then placing that data in a json structure
+Python utilities for handling the import of data from the Charity Commission data.
+
+The additional code handles the conversion of this data form csvs into json and then the adding of that data to an elasticsearch database.
 
 ## Get the data
 
