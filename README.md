@@ -16,8 +16,8 @@ Marc Lawson at NCVO has also written [a guide to getting the data into a databas
 
 ## Using the code in this repo
 
-After downloading the zipped charity commission data, place it in a directory within the project directory. The bcp_to_json.convert_all_data_to_json function can be called, with the location of the file as the 'csv_folder' arguemnt, and the name of the zip file as the 'zip_file' argumen. 'extract_data' will need to be set to True, otherwise a the set of extracted csvs are expected. 
+After downloading the zipped charity commission data, place it in a directory within the project directory. The bcp_to_json.convert_all_data_to_json function can be called with the location of the file as the 'csv_folder' argument, and the name of the zip file as the 'zip_file' argument. 'extract_data' will need to be set to True, otherwise the full set of extracted csvs are expected to exist already. 
 
 convert_all_data_to_json is also called by the elasticsearch_import script which places the data into an ES database.
 
-There are a number of options for selecting which ids to use. Note - converting all the data will probably take a very long time.
+There are a number of options in convert_all_data_to_json for selecting which ids to use. Note - converting all the data will probably take a very long time.
