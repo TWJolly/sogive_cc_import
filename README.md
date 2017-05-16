@@ -8,6 +8,8 @@ The additional code handles the conversion of this data from csvs into json and 
 
 The data can be accessed from <http://data.charitycommission.gov.uk/default.aspx>
 
+Data definition : http://data.charitycommission.gov.uk/data-definition.aspx - these headings are used for the names of the json objects
+
 ## Beginner's Guide
 
 A [beginner's guide](beginners-guide.md) to using the Charity Commission data extract.
